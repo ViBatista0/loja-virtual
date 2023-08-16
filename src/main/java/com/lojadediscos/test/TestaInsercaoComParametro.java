@@ -16,8 +16,7 @@ public class TestaInsercaoComParametro {
                     Statement.RETURN_GENERATED_KEYS);
             ) {
 
-                adicionarVariavel("RTX 4090", "Nvidia", stm);
-                adicionarVariavel("Core I9", "Intel", stm);
+                adicionarVariavel("Elden Ring", "FromSoftware Inc.", stm);
 
                 con.commit();
 

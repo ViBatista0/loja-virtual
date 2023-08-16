@@ -1,7 +1,6 @@
 package com.lojadediscos.test;
 
 import com.lojadediscos.dao.CategoriaDAO;
-import com.lojadediscos.dao.ProdutoDAO;
 import com.lojadediscos.model.Categoria;
 import com.lojadediscos.model.Produto;
 import com.lojadediscos.repository.ConnectionFactory;
@@ -19,10 +18,12 @@ public class TestaListarCategoria {
                 System.out.println(lc.getNome());
                 for (Produto produto : lc.getProdutos()
                 ) {
-                    System.out.println(lc.getNome() + " - " + produto.getNome());
+                    System.out.println("Categoria: " + lc.getNome());
+                    System.out.println("Nome do produto: " + produto.getNome());
+                    System.out.println();
                 }
             });
-
+//INNER JOIN
         }
 
     }
